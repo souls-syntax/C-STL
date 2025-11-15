@@ -60,7 +60,7 @@ void deleteNodeByValue(Node** headRef, int value) {
     free(temp);
     return;
   }
-  while (temp != NULL && temp->value == value) {
+  while (temp != NULL && temp->value != value) {
     prev = temp;
     temp = temp->next;
   }
@@ -82,7 +82,7 @@ void freeList(Node* head) {
   }
 }
 
-void prinList(Node* head) {
+void printList(Node* head) {
   Node* current = head;
   while (current != NULL) {
     printf("%d-> ", current->value);
