@@ -32,4 +32,4 @@ typedef struct  {
 #define array_free(array) free((Header *)(array) - 1)
 
 #define array_length(array) ((Header*)(array)-1)->count
-
+do you know what giving head means?
